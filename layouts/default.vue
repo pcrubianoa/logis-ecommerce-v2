@@ -341,7 +341,7 @@ export default {
   data(){
     return{
       categories: [],
-      PATH_IMAGES: process.env.PATH_IMAGES
+      PATH_IMAGES : process.env.PATH_IMAGES
     }
   },
   filters: {

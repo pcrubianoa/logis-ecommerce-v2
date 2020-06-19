@@ -1,6 +1,12 @@
 const webpack = require("webpack");
 
 export default {
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL
+  },
+  privateRuntimeConfig: {
+    PATH_IMAGES: process.env.PATH_IMAGES
+  },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -49,9 +55,6 @@ export default {
     'assets/css/style.css',
     'assets/css/responsive.css',
   ],
-  env: {
-    PATH_IMAGES: 'http://localhost/app/img/pclinea/',
-  },
   /*
   ** Plugins to load before mounting the App
   */
